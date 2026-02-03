@@ -1,35 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  /* Primary - Deep Forest Green */
-  --color-forest: #2D5A27;
-  --color-forest-dark: #1A3D18;
-  --color-forest-light: #3E7B36;
+  /* Primary - Vivid Leaf Green */
+  --color-leaf: #4B7F52;
+  --color-leaf-dark: #3A6341;
+  --color-leaf-light: #5C9B64;
 
-  /* Accent - Sacred Purple */
-  --color-sacred: #8B5CF6;
-  --color-sacred-dark: #7C3AED;
-  --color-sacred-light: #A78BFA;
+  /* Accent - Delicate Flower Purple */
+  --color-flower: #A29BFE;
+  --color-flower-dark: #8B83E8;
+  --color-flower-light: #B9B4FF;
 
-  /* Base - Medical White */
-  --color-medical: #F8FAFC;
-  --color-medical-dark: #F1F5F9;
+  /* Base - Clean Off-White */
+  --color-base: #F9FAFB;
+  --color-base-dark: #F3F4F6;
 
   /* Warm Accent */
   --color-gold: #D97706;
   --color-gold-light: #F59E0B;
 
-  /* Neutral */
-  --color-slate-50: #F8FAFC;
-  --color-slate-100: #F1F5F9;
-  --color-slate-200: #E2E8F0;
-  --color-slate-300: #CBD5E1;
-  --color-slate-400: #94A3B8;
-  --color-slate-500: #64748B;
-  --color-slate-600: #475569;
-  --color-slate-700: #334155;
-  --color-slate-800: #1E293B;
-  --color-slate-900: #0F172A;
+  /* Neutral - Gray Scale */
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E5E7EB;
+  --color-gray-300: #D1D5DB;
+  --color-gray-400: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1F2937;
+  --color-gray-900: #111827;
 
   /* Typography */
   --font-sans: 'Noto Sans JP', system-ui, sans-serif;
@@ -42,8 +42,8 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-medical);
-  color: var(--color-slate-800);
+  background-color: var(--color-base);
+  color: var(--color-gray-800);
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -51,7 +51,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-sacred);
+  background-color: var(--color-flower);
   color: white;
 }
 
@@ -61,20 +61,20 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-slate-100);
+  background: var(--color-gray-100);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-forest);
+  background: var(--color-leaf);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-forest-dark);
+  background: var(--color-leaf-dark);
 }
 
 /* Focus styles for accessibility */
 :focus-visible {
-  outline: 2px solid var(--color-sacred);
+  outline: 2px solid var(--color-flower);
   outline-offset: 2px;
 }
