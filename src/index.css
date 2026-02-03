@@ -1,16 +1,39 @@
 @import "tailwindcss";
 
 @theme {
+  /* Primary - Deep Forest Green */
   --color-forest: #2D5A27;
-  --color-forest-dark: #1E3D1A;
-  --color-forest-light: #3D7A35;
-  --color-lavender: #7B68EE;
-  --color-lavender-dark: #5B48CE;
-  --color-lavender-light: #9B88FF;
-  --color-cream: #FDFCF0;
-  --color-cream-dark: #F5F3E0;
+  --color-forest-dark: #1A3D18;
+  --color-forest-light: #3E7B36;
+
+  /* Accent - Sacred Purple */
+  --color-sacred: #8B5CF6;
+  --color-sacred-dark: #7C3AED;
+  --color-sacred-light: #A78BFA;
+
+  /* Base - Medical White */
+  --color-medical: #F8FAFC;
+  --color-medical-dark: #F1F5F9;
+
+  /* Warm Accent */
+  --color-gold: #D97706;
+  --color-gold-light: #F59E0B;
+
+  /* Neutral */
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1E293B;
+  --color-slate-900: #0F172A;
+
+  /* Typography */
   --font-sans: 'Noto Sans JP', system-ui, sans-serif;
-  --font-serif: 'Noto Serif JP', serif;
+  --font-serif: 'Noto Serif JP', Georgia, serif;
 }
 
 html {
@@ -19,31 +42,39 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-cream);
-  color: #333;
+  background-color: var(--color-medical);
+  color: var(--color-slate-800);
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: var(--color-lavender);
+  background-color: var(--color-sacred);
   color: white;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-cream-dark);
+  background: var(--color-slate-100);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--color-forest);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-forest-dark);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-sacred);
+  outline-offset: 2px;
 }
