@@ -534,10 +534,10 @@ const AboutSection: FC = () => {
 const OrganizationSection: FC = () => {
   const boardMembers: BoardMember[] = [
     { role: '理事長', name: '杉浦 正', isChair: true },
-    { role: '副理事長', name: '大矢 法子' },
-    { role: '副理事長', name: '杉浦 紀美子' },
-    { role: '副理事長', name: '佐野 朝美' },
-    { role: '副理事長', name: '柿沼 伸佳' },
+    { role: '理事', name: '大矢 法子' },
+    { role: '理事', name: '杉浦 紀美子' },
+    { role: '理事', name: '佐野 朝美' },
+    { role: '理事', name: '柿沼 伸佳' },
     { role: '監事', name: '前日 翔' },
   ]
 
